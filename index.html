@@ -10,6 +10,9 @@
   <!-- Favicon -->
   <link rel="icon" type="image/jpeg" href="favicon.jpg" />
 
+  <!-- Police façon Vanves en Confiance -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --blue: #005ca9;
@@ -125,8 +128,37 @@
       font-size: 0.8rem;
       color: #888;
     }
+
+    /* Animation footer */
+    @keyframes vecFadeUp {
+      0% {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      40% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      80% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0.9;
+      }
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-family: 'Pacifico', cursive;
+      font-size: 1.5rem;
+      color: var(--coral);
+      letter-spacing: 0.5px;
+      animation: vecFadeUp 3.5s ease-in-out forwards;
+    }
   </style>
 </head>
+
 <body>
   <div class="page">
     <div class="container">
@@ -220,6 +252,12 @@
           </div>
         </div>
       </div>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        A Vanves, la confiance ça se prouve !
+      </div>
+
     </div>
   </div>
 </body>
