@@ -4,13 +4,8 @@
   <meta charset="UTF-8" />
   <title>Vanves en Confiance – Liens utiles</title>
 
-  <!-- Responsive -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Favicon -->
   <link rel="icon" type="image/jpeg" href="favicon.jpg" />
-
-  <!-- Police façon Vanves en Confiance -->
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
   <style>
@@ -117,6 +112,24 @@
       margin: 0 auto;
     }
 
+    /* Séparateur graphique */
+    .separator {
+      margin: 1.8rem auto 0.8rem auto;
+      width: 60%;
+      height: 2px;
+      background: var(--blue);
+      border-radius: 2px;
+    }
+
+    /* Petit texte explicatif, maintenant en bleu */
+    .mid-note {
+      margin-top: 0.2rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--blue);
+      line-height: 1.4;
+    }
+
     /* Animation footer */
     @keyframes vecFadeUp {
       0% { opacity: 0; transform: translateY(8px); }
@@ -142,15 +155,13 @@
     <div class="container">
 
       <div class="header">
-        <!-- LOGO CLIQUABLE -->
         <a href="https://www.vanvesenconfiance.fr" target="_blank" rel="noopener">
           <img src="logo.jpg" alt="Vanves en Confiance" class="header-logo">
         </a>
-        <div class="header-title">Liens directs</div>
+        <div class="header-title">Vanves en Confiance – Liens directs</div>
       </div>
 
       <div class="grid">
-        <!-- ENQUÊTE -->
         <div class="card">
           <div class="card-inner">
             <a class="card-link"
@@ -162,7 +173,6 @@
           </div>
         </div>
 
-        <!-- COMITÉ -->
         <div class="card">
           <div class="card-inner">
             <a class="card-link"
@@ -174,7 +184,6 @@
           </div>
         </div>
 
-        <!-- INSTAGRAM -->
         <div class="card">
           <div class="card-inner">
             <a class="card-link"
@@ -186,7 +195,6 @@
           </div>
         </div>
 
-        <!-- FACEBOOK -->
         <div class="card">
           <div class="card-inner">
             <a class="card-link"
@@ -199,14 +207,19 @@
         </div>
       </div>
 
-      <!-- FOOTER ANIMÉ -->
+      <!-- SÉPARATEUR + TEXTE -->
+      <div class="separator"></div>
+
+      <div class="mid-note">
+        Scannez ou cliquez sur les QR codes pour accéder au comité de soutien et à nos réseaux sociaux — et invitez vos contacts à nous rejoindre.
+      </div>
+
+      <!-- FOOTER -->
       <div class="footer">
-        À Vanves, la confiance ça se prouve !
+        A Vanves, la confiance ça se prouve !
       </div>
 
     </div>
   </div>
 </body>
 </html>
-
-
