@@ -105,12 +105,11 @@
       font-weight: 700;
       margin-bottom: 0.75rem;
       font-size: 1rem;
-      text-transform: none;
       color: var(--blue);
       line-height: 1.3;
+      text-transform: none;
     }
 
-    /* Conteneur pour QR + emoji */
     .qr-wrapper {
       position: relative;
       display: inline-block;
@@ -120,25 +119,35 @@
       max-width: 200px;
       width: 100%;
       height: auto;
+      border-radius: 1rem;
       display: block;
       margin: 0 auto;
-      border-radius: 1rem;
     }
 
-    .qr-emoji {
+    .qr-emoji,
+    .qr-icon {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 2.2rem;
       pointer-events: none;
+    }
+
+    .qr-emoji {
+      font-size: 2.2rem;
     }
 
     .qr-emoji.question {
       color: var(--coral);
     }
 
-    /* Hover cartes/boutons */
+    .qr-icon img {
+      width: 42px;
+      height: 42px;
+      pointer-events: none;
+      display: block;
+    }
+
     .card:hover {
       transform: translateY(-4px);
       box-shadow: 0 12px 26px rgba(0,0,0,0.18);
@@ -184,7 +193,9 @@
             <a class="card-link"
                href="https://docs.google.com/forms/d/e/1FAIpQLSdRpx2SGyhcIbXq6uTP8jHnGZXQL6Ia_RiwrtIYpZOS3CWzaQ/viewform"
                target="_blank" rel="noopener">
-              <div class="card-title">Rejoignez notre comité de soutien</div>
+              <div class="card-title">
+                Rejoindre notre<br>comité de soutien
+              </div>
               <div class="qr-wrapper">
                 <img src="qrcode2.png" class="card-img" alt="QR Comité">
                 <span class="qr-emoji">🤝</span>
@@ -199,10 +210,14 @@
             <a class="card-link"
                href="https://www.instagram.com/vanvesenconfiance"
                target="_blank" rel="noopener">
-              <div class="card-title">Suivez-nous sur Instagram en cliquant sur Suivre</div>
+              <div class="card-title">
+                Suivez-nous sur Instagram<br>en cliquant sur Suivre
+              </div>
               <div class="qr-wrapper">
                 <img src="IN.png" class="card-img" alt="QR Instagram">
-                <span class="qr-emoji">📸</span>
+                <span class="qr-icon">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                </span>
               </div>
             </a>
           </div>
@@ -214,22 +229,28 @@
             <a class="card-link"
                href="https://www.facebook.com/vanvesconfiance2026"
                target="_blank" rel="noopener">
-              <div class="card-title">Suivez-nous sur Facebook en cliquant sur Suivre</div>
+              <div class="card-title">
+                Suivez-nous sur Facebook<br>en cliquant sur Suivre
+              </div>
               <div class="qr-wrapper">
                 <img src="FB.png" class="card-img" alt="QR Facebook">
-                <span class="qr-emoji">📘</span>
+                <span class="qr-icon">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook">
+                </span>
               </div>
             </a>
           </div>
         </div>
 
-        <!-- 4. Questionnaire minute (dernier) -->
+        <!-- 4. Questionnaire minute -->
         <div class="card">
           <div class="card-inner">
             <a class="card-link"
                href="https://docs.google.com/forms/d/e/1FAIpQLSc_453I5A4MBeNL4AUFqYbIhaVYJcc274kJT_peKcuPZkVWow/viewform"
                target="_blank" rel="noopener">
-              <div class="card-title">Questionnaire minute</div>
+              <div class="card-title">
+                Questionnaire<br>minute
+              </div>
               <div class="qr-wrapper">
                 <img src="qrcode1.jpg" class="card-img" alt="QR Questionnaire">
                 <span class="qr-emoji question">❓</span>
